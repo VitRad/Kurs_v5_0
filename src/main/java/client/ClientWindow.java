@@ -42,7 +42,7 @@ public class ClientWindow extends JFrame {
             e.printStackTrace();
         }
         // Задаём настройки элементов на форме
-        setBounds(600, 300, 600, 500);
+        setBounds(400, 200, 600, 500);
         setTitle("Client");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jtaTextAreaMessage = new JTextArea();
