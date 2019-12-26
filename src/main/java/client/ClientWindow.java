@@ -32,7 +32,8 @@ public class ClientWindow extends JFrame {
     }
 
     // конструктор
-    public ClientWindow() {
+//    public ClientWindow() {
+    public void windowGen() {
         try {
             // подключаемся к серверу
             clientSocket = new Socket(SERVER_HOST, SERVER_PORT);
@@ -147,7 +148,7 @@ public class ClientWindow extends JFrame {
                         outMessage.println("Участник вышел из чата, так и не представившись!");
                     }
                     // отправляем служебное сообщение, которое является признаком того, что клиент вышел из чата
-                    outMessage.println("##session##end##");
+                    outMessage.println("exit");
                     outMessage.flush();
                     outMessage.close();
                     inMessage.close();
