@@ -22,7 +22,6 @@ public class ClientHandler implements Runnable {
     private static int clients_count = 0;
 
     // конструктор, который принимает клиентский сокет и сервер
-//    public ClientHandler(Socket socket, Server server) {
     public void clientSession(Socket socket, Server server) {
         try {
             clients_count++;
